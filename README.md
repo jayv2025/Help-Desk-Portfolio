@@ -8,7 +8,7 @@ Built a fully functional Active Directory environment using Windows Server and W
 
 ## Environment
 - Hypervisor: VirtualBox
-- Domain Controller: Windows Server 2025
+- Domain Controller: Windows Server 2022
 - Client: Windows 11 Enterprise
 - Network: Host-Only Adapter
 - Domain: LAB.local
