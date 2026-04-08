@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Help-Desk-Portfolio
-=======
+
 # Active Directory Home Lab (Windows Server + Windows 11)
 
 ## Overview
