@@ -12,7 +12,7 @@ This lab demonstrates the deployment, configuration and validation of a Windows 
 
 ## Scope of Work 
 - Installed and configured Active Directory Domain Services
-- Promoted Windows Server to Domainn Controller for LAB.local
+- Promoted Windows Server to Domain Controller for LAB.local
 - Joined Windows 11 client to the domain
 - Created and managed domain user accounts 
 - Configured a shared folder on the Domain Controller 

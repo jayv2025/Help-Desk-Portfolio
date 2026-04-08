@@ -30,4 +30,3 @@ Built a fully functional Active Directory environment using Windows Server and W
 - Successful domain discovery using `nltest /dsgetdc`
 - DNS resolution verified using `nslookup`
 - Client authentication and GPO application confirmed
->>>>>>> 1ee205d (Initial commit: Active Directory Lab)
