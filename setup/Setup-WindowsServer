@@ -1,0 +1,81 @@
+# Setup Windows Server 
+
+This section demonstrates how to download and install **Windows Server 2022** and configure it in **VirtualBox**.
+
+---
+
+### Step 1 Download Windows Server 2022 ISO
+
+1. Navigate to: https://www.microsoft.com/en-us/evalcenter
+2. Click **Windows Server 2022**
+3. Click **Download the ISO**
+4. Complete the registration form for the free trail
+5. Click **Download Now** after registration
+6. Under the **English** section, select **64-bit edition**
+7. Save the ISO file to your desired location
+ 
+---
+
+### Step 2 Create Virtual Machine in VirtualBox
+
+1. Lauch **VirtualBox**
+2. Click **New**
+3. Configure the VM:
+    **Name**: Windows Server 2022 
+    **ISO Image**: Select the downloaded ISO file
+    Click **Skip unattended Installation**
+4. Click **Next**
+5. Configure hardware:
+    - Leave default settings (or adjust if needed)
+    - Click **Next**
+6. Configure virtual hard disk:
+    - Leave default settings 
+    - Click **Next**
+7. Click **Finish**
+
+---
+
+### Step 3 Install Windows Server 2022 
+1. Select the **Windows Server VM**
+2. Click **Start**
+3. In the setup window:
+   -  Select Language (e.g., English) -> Click **Next**
+   -  Click Install Now
+   -  Select **Windows Server 2022 Standard Evaluation** -> Click **Next**
+   -  Accept **License Terms** -> Click **Next**
+   -  Select **Custom: Install Microsoft Server Operating System only**
+   -  Choose the default drive -> Click **Next**
+4. Wait for installation to complete
+
+---
+
+### Step 4 Inital Configuration
+1. After reboot, set the **Administrator password**
+2. To log in:
+    - In the VirtualBox menu, click **Input**
+    - Select **Keyboard** -> **Insert Ctrl+Alt+Del**
+    - Enter the Administrator password
+
+---
+
+### Step 5 Install Guest Additions
+
+1. In the VirtualBox menu, click:
+**Devices -> Insert Guest Additions CD Image**
+2. Open **File Explorer** inside the VM
+3. Navigate to the mounted drive
+4. Right-click **VBoxWindowsAdditions-amd64** → Select **Run as administrator**
+5. Click **Yes** when prompted
+6. In the setup wizard:
+    - Accept default settings
+    - Click **Install**
+7. Click **Finish**, then select **Reboot Now**
+
+
+### Step 6 Adjust Display Settings
+After reboot:
+1. Log back into the VM
+2. In the VirtualBox menu, click **View**
+3. Select **Auto-resize Guest Display**
+4. Enable full screen:
+    Click **View -> Full Screen Mode**
