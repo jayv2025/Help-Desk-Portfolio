@@ -21,10 +21,20 @@ Built a fully functional Active Directory environment using Windows Server and W
 - Created and secured shared folders using NTFS and share permissions
 - Applied Group Policy Objects (GPOs)
 
-## Troubleshoots 
+## Troubleshoots for Active Directory
 - DNS, NetLogon, and VirtualBox networking issues
 - Password reset 
 
+
+## Tickets
+- Tickets created and maintained using Spiceworks cloud
+- Tickets contain the following scenarios:
+- Slow PC Performance
+- Software Installation
+- Windows Updates failing
+- Disk space cleanup
+- Malware detection and removal
+- Printer not working
 
 ## Validation
 - Successful domain discovery using `nltest /dsgetdc`
