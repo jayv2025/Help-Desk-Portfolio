@@ -34,7 +34,7 @@ Built a fully functional Active Directory environment using Windows Server and W
 - Windows Updates failing
 - Disk space cleanup
 - Malware detection and removal
-- Printer not working
+
 
 ## Validation
 - Successful domain discovery using `nltest /dsgetdc`
