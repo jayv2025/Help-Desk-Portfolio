@@ -1,0 +1,111 @@
+# Ticket #003 - Windows Updates Failing 
+
+
+---
+
+## Summary
+
+User reported Windows 11 VM showing missing security updates. Multiple updates were pending installation, and one cumulative security update became delayed during installation progress. 
+
+---
+
+## Symptoms
+- Windows Update displayed warning that important security updates were missing 
+- Multiple updates pending installation
+- Security update KB5083769 stalled during progress (60%, later 99%, then reset to 8%)
+- System required restart to finalize update
+
+---
+
+## Affect User
+- Operating System: Windows 11 VM
+- User: Windows 11 User 
+
+---
+
+## Investigation 
+- Opened Windows Update settings and reviewed pending updates
+- Verified several updates successfully installed:
+    - .NET Framework Security Update
+    - AudioProcessingObject Driver Update
+    - Windows Security Platform Update
+- Observed cumulative security update KB5083769 stall during progress reporting 
+- Opened elevated Command Prompt and restarted Windows Update services with: 
+    net stop wuauserv
+    net stop bits
+    net start wuauserv
+    net start bits
+- After service restart, update progressed to 99%, later reset to 8%, indicating multiple installation phases rather than total failure.
+
+
+---
+
+## Root Cause 
+Windows cumulative update required extended processing time and system restart finalized installation. Progress percentage temporarily appeared stalled during different update phases.
+
+---
+
+## Resolution
+- Restarted Windows Update related services
+- Allowed update process to continue uninterrupted 
+- Restarted Windows 11 VM when prompted 
+- Verified system is up to date
+
+## Evidence
+
+Ticket in Spicework
+![ticket in Spicework](ticket-screenshots/Ticket3-created.png)
+
+Inital missing update screen 
+![Windows update settings](ticket-screenshots/Ticket3-Initial-update.png)
+
+
+Task manager
+![task manager](ticket-screenshots/Ticket3-task-manager.png)
+
+
+Stuck at 60%
+
+![process stuck](ticket-screenshots/Ticket3-process-stuck.png)
+
+
+Restart 
+
+![Restart prompt](ticket-screenshots/Ticket3-Restart.png)
+
+Up to date confirmation
+![up to date](ticket-screenshots/Ticket3-Uptodate.png)
+
+
+
+Completed and closed ticket
+
+![compeleted ticket](ticket-screenshots/Ticket3-Complete.png)
+
+---
+
+## Verification 
+- Windows update status now shows **Up to date**
+- No pending update remain 
+- Security updates installed successfully 
+- System operating normally
+
+
+---
+
+## Tools used 
+- Windows update settings 
+- Command Prompt (Administrator)
+- Commands used:
+    net stop wuauserv
+    net stop bits
+    net start wuauserv
+    net start bits
+- Restart process
+- Troubleshooting workflow
+
+---
+
+## Lessons Learned
+
+Windows Update progress percentages may appear stalled or reset during download, preparation and installation phases. Restarting update services and allowing the process to complete can resolve many update delays without deeper repair steps.
