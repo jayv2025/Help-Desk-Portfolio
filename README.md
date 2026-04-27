@@ -29,6 +29,7 @@ Built a fully functional Active Directory environment using Windows Server and W
 ## Tickets
 - Tickets created and maintained using Spiceworks cloud
 - Tickets contain the following scenarios:
+- Wi-Fi Connection
 - Slow PC Performance
 - Software Installation
 - Windows Updates failing
