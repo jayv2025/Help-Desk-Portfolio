@@ -48,10 +48,20 @@ The issue was caused by incorrect DNS configuration on the network adapter. The 
 - Retested connectivity successfully.
 
 ## Evidence
+
+Ticket in Spicework
 ![ticket in Spicework](ticket-screenshots/ticket-1.png)
+
+Ping output before fix 
 ![ping output before fix ](ticket-screenshots/ticket1-issue-ping.png)
+
+Ping output after fix
 ![ping output after fix](ticket-screenshots/ticket1-after-fix.png)
+
+Browser after fix 
 ![browser after fix](ticket-screenshots/Ticket1-browser-after-fix.png)
+
+Completed and closed ticket
 ![completed and closed ticket](ticket-screenshots/ticket-1-comments.png)
 
 ---
