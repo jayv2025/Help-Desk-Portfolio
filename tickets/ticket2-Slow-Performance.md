@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Ticket #002 - Slow PC Performance
 
 ---
@@ -172,4 +172,3 @@ Completed and closed ticket
 ## Lessons Learned
 
 High CPU and memory usage from multiple applications and startup processes can significantly degrade system performance. Task Manager is an essential tool for identifying resource bottlenecks and resolving performance-related issues efficiently.
->>>>>>> 047dedc9931062932bce437497fe21db2fbd13ae
