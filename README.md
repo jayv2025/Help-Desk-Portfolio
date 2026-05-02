@@ -31,7 +31,7 @@ Built a fully functional Active Directory environment using Windows Server and W
 - Tickets contain the following scenarios:
   [x] Wi-Fi Connection 
   [x] Slow PC Performance 
-  - Software Installation
+  [x] Software Installation
   [x] Windows Updates failing 
   - Disk space cleanup
   - Malware detection and removal
